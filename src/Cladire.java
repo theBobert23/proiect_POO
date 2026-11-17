@@ -10,6 +10,22 @@ public class Cladire implements Informatii {
         this.inaltime = inaltime;
     }
 
+    public void verificaLift() {
+        if (numarEtaje > 3) {
+            System.out.println("Cladirea ar putea avea lift.");
+        } else {
+            System.out.println("Cladirea nu necesita lift.");
+        }
+    }
+
+    public void afiseazaTipCladire() {
+        if (numarEtaje > 4) {
+            System.out.println("Cladire inalta.");
+        } else {
+            System.out.println("Cladire joasa.");
+        }
+    }
+
     @Override
     public void afisareInformatii() {
         System.out.println("Adresa: " + adresa);
