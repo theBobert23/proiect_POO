@@ -1,4 +1,4 @@
-public class Camera implements Securizabil {
+public class Camera implements Securizabil,Informatii {
 
   static int numar;
   private double lungime, latime, inaltime;
@@ -82,7 +82,19 @@ public class Camera implements Securizabil {
 
   @Override
   public String toString(){
-    return "Camera " + numar + ", este de " + lungime + "x" + latime + "x" + inaltime + ".\nAre " + nrFerestre + " ferestre, si peretii " + culoarePereti + ".";
+    return "Camera " + ", este de " + lungime + "x" + latime + "x" + inaltime + ".\nAre " + nrFerestre + " ferestre, si peretii " + culoarePereti + ".";
+  }
+
+  @Override
+  public void afisareInformatii(){
+    System.out.println("Camera " + ", este de " + lungime + "x" + latime + "x" + inaltime + ".\nAre " + nrFerestre + " ferestre, si peretii " + culoarePereti + ".");
+  }
+
+  @Override
+  public double calculeazaInaltimeTotala(){
+    double h = 0;
+
+    return h;
   }
 
   //public abstract double getConsum();
