@@ -1,22 +1,26 @@
-public class ProprietateImobiliara implements Interfata {
+public class ProprietateImobiliara implements Informatii {
     private String adresa;
     private double suprafata;
     private int anConstructie;
     private double pretPeMetruPatrat;
+    private int nrEtaje;
 
     public ProprietateImobiliara() {
         this.adresa = "necunoscuta";
         this.suprafata = 0;
         this.anConstructie = 2000;
         this.pretPeMetruPatrat = 1000;
+        this.nrEtaje = 0;
     }
 
-    public ProprietateImobiliara(String adresa, double suprafata) {
+    public ProprietateImobiliara(String adresa, double suprafata, int nrEtaje) {
         this.adresa = adresa;
         this.suprafata = suprafata;
         this.anConstructie = 2000;
         this.pretPeMetruPatrat = 1000;
+        this.nrEtaje = nrEtaje;
     }
+
     public String getAdresa() {
         return adresa;
     }
@@ -56,15 +60,17 @@ public class ProprietateImobiliara implements Interfata {
     public boolean esteNoua() {
         return anConstructie >= 2020;
     }
-@Override
-    public void afiseazaDetalii() {
+
+    @Override
+    public void afisareInformatii() {
         System.out.println("Adresa: " + adresa);
         System.out.println("Suprafata: " + suprafata);
         System.out.println("An constructie: " + anConstructie);
         System.out.println("Pret pe mp: " + pretPeMetruPatrat);
     }
+
     @Override
-    public double calculeazaPret() {
-        return suprafata * pretPeMetruPatrat;
+    public double calculeazaInaltimeTotala() {
+        return nrEtaje * 2.3; // Fiecare etaj este 2,3m
     }
 }
