@@ -7,7 +7,7 @@ public class Bloc extends Cladire {
     private boolean parcare;
 
     public Bloc() {
-        super("", 0, 0);
+        super();
     }
 
     public Bloc(String adresa, int numarEtaje,

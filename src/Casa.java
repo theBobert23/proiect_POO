@@ -7,7 +7,7 @@ public class Casa extends Cladire {
     private String material;
 
     public Casa() {
-        super("", 0, 0);
+        super();
     }
 
     public Casa(String adresa, int numarEtaje,

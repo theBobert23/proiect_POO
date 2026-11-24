@@ -4,10 +4,25 @@ public class Cladire implements Informatii {
     int numarEtaje;
     double inaltime;
 
+    // Constructor fara parametri
+    public Cladire() {
+        this.adresa = "Necunoscuta";
+        this.numarEtaje = 1;
+        this.inaltime = 3.0;
+    }
+
+    // Constructor cu parametri
     public Cladire(String adresa, int numarEtaje, double inaltime) {
         this.adresa = adresa;
         this.numarEtaje = numarEtaje;
         this.inaltime = inaltime;
+    }
+
+    // Constructor de copiere
+    public Cladire(Cladire c) {
+        this.adresa = c.adresa;
+        this.numarEtaje = c.numarEtaje;
+        this.inaltime = c.inaltime;
     }
 
     public void verificaLift() {
