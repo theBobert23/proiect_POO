@@ -39,14 +39,12 @@ public class MainRG {
         System.out.println("=== LISTA DORMITOARE ===");
         for (int i = 0; i < dormitoare.size(); i++) {
             System.out.println("\nDormitor #" + (i + 1));
-            dormitoare.get(i).afisareInformatii();
         }
 
         // Afisare bucatarii
         System.out.println("\n=== LISTA BUCATARII ===");
         for (int i = 0; i < bucatarii.size(); i++) {
             System.out.println("\nBucatarie #" + (i + 1));
-            bucatarii.get(i).afisareInformatii();
         }
     }
 }
